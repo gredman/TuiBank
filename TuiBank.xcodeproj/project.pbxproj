@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		36F7F94E1DA84A9400BE3031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */; };
-		36F7F9501DA84A9400BE3031 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F94F1DA84A9400BE3031 /* FirstViewController.swift */; };
-		36F7F9521DA84A9400BE3031 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9511DA84A9400BE3031 /* SecondViewController.swift */; };
-		36F7F9551DA84A9400BE3031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9531DA84A9400BE3031 /* Main.storyboard */; };
 		36F7F9571DA84A9400BE3031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9561DA84A9400BE3031 /* Assets.xcassets */; };
-		36F7F95A1DA84A9400BE3031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9581DA84A9400BE3031 /* LaunchScreen.storyboard */; };
+		36F7F9761DA84F0C00BE3031 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9701DA84F0C00BE3031 /* Account.swift */; };
+		36F7F9771DA84F0C00BE3031 /* AccountsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9711DA84F0C00BE3031 /* AccountsRepository.swift */; };
+		36F7F9781DA84F0C00BE3031 /* Payee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9721DA84F0C00BE3031 /* Payee.swift */; };
+		36F7F9791DA84F0C00BE3031 /* PayeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9731DA84F0C00BE3031 /* PayeesRepository.swift */; };
+		36F7F97A1DA84F0C00BE3031 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9741DA84F0C00BE3031 /* Payment.swift */; };
+		36F7F97B1DA84F0C00BE3031 /* PaymentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9751DA84F0C00BE3031 /* PaymentsRepository.swift */; };
+		36F7F9841DA8512600BE3031 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F97F1DA8512600BE3031 /* AccountsViewController.swift */; };
+		36F7F9851DA8512600BE3031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9801DA8512600BE3031 /* LaunchScreen.storyboard */; };
+		36F7F9861DA8512600BE3031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9811DA8512600BE3031 /* Main.storyboard */; };
+		36F7F9871DA8512600BE3031 /* PayeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9821DA8512600BE3031 /* PayeesViewController.swift */; };
+		36F7F9881DA8512600BE3031 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36F7F94A1DA84A9400BE3031 /* TuiBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuiBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36F7F94F1DA84A9400BE3031 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		36F7F9511DA84A9400BE3031 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		36F7F9541DA84A9400BE3031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36F7F9561DA84A9400BE3031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36F7F9591DA84A9400BE3031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36F7F95B1DA84A9400BE3031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F7F9701DA84F0C00BE3031 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		36F7F9711DA84F0C00BE3031 /* AccountsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsRepository.swift; sourceTree = "<group>"; };
+		36F7F9721DA84F0C00BE3031 /* Payee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payee.swift; sourceTree = "<group>"; };
+		36F7F9731DA84F0C00BE3031 /* PayeesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeesRepository.swift; sourceTree = "<group>"; };
+		36F7F9741DA84F0C00BE3031 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		36F7F9751DA84F0C00BE3031 /* PaymentsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsRepository.swift; sourceTree = "<group>"; };
+		36F7F97F1DA8512600BE3031 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		36F7F9801DA8512600BE3031 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36F7F9811DA8512600BE3031 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		36F7F9821DA8512600BE3031 /* PayeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeesViewController.swift; sourceTree = "<group>"; };
+		36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +71,37 @@
 			isa = PBXGroup;
 			children = (
 				36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */,
-				36F7F94F1DA84A9400BE3031 /* FirstViewController.swift */,
-				36F7F9511DA84A9400BE3031 /* SecondViewController.swift */,
-				36F7F9531DA84A9400BE3031 /* Main.storyboard */,
 				36F7F9561DA84A9400BE3031 /* Assets.xcassets */,
-				36F7F9581DA84A9400BE3031 /* LaunchScreen.storyboard */,
+				36F7F96F1DA84F0C00BE3031 /* Data */,
 				36F7F95B1DA84A9400BE3031 /* Info.plist */,
+				36F7F97E1DA8512600BE3031 /* User Interface */,
 			);
 			path = TuiBank;
+			sourceTree = "<group>";
+		};
+		36F7F96F1DA84F0C00BE3031 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36F7F9701DA84F0C00BE3031 /* Account.swift */,
+				36F7F9711DA84F0C00BE3031 /* AccountsRepository.swift */,
+				36F7F9721DA84F0C00BE3031 /* Payee.swift */,
+				36F7F9731DA84F0C00BE3031 /* PayeesRepository.swift */,
+				36F7F9741DA84F0C00BE3031 /* Payment.swift */,
+				36F7F9751DA84F0C00BE3031 /* PaymentsRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36F7F97E1DA8512600BE3031 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				36F7F97F1DA8512600BE3031 /* AccountsViewController.swift */,
+				36F7F9801DA8512600BE3031 /* LaunchScreen.storyboard */,
+				36F7F9811DA8512600BE3031 /* Main.storyboard */,
+				36F7F9821DA8512600BE3031 /* PayeesViewController.swift */,
+				36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F7F95A1DA84A9400BE3031 /* LaunchScreen.storyboard in Resources */,
+				36F7F9861DA8512600BE3031 /* Main.storyboard in Resources */,
+				36F7F9851DA8512600BE3031 /* LaunchScreen.storyboard in Resources */,
 				36F7F9571DA84A9400BE3031 /* Assets.xcassets in Resources */,
-				36F7F9551DA84A9400BE3031 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,32 +177,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F7F9521DA84A9400BE3031 /* SecondViewController.swift in Sources */,
+				36F7F9871DA8512600BE3031 /* PayeesViewController.swift in Sources */,
+				36F7F97B1DA84F0C00BE3031 /* PaymentsRepository.swift in Sources */,
+				36F7F9791DA84F0C00BE3031 /* PayeesRepository.swift in Sources */,
+				36F7F9771DA84F0C00BE3031 /* AccountsRepository.swift in Sources */,
+				36F7F9781DA84F0C00BE3031 /* Payee.swift in Sources */,
+				36F7F9881DA8512600BE3031 /* PaymentsViewController.swift in Sources */,
+				36F7F9761DA84F0C00BE3031 /* Account.swift in Sources */,
 				36F7F94E1DA84A9400BE3031 /* AppDelegate.swift in Sources */,
-				36F7F9501DA84A9400BE3031 /* FirstViewController.swift in Sources */,
+				36F7F9841DA8512600BE3031 /* AccountsViewController.swift in Sources */,
+				36F7F97A1DA84F0C00BE3031 /* Payment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		36F7F9531DA84A9400BE3031 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36F7F9541DA84A9400BE3031 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		36F7F9581DA84A9400BE3031 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36F7F9591DA84A9400BE3031 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		36F7F95C1DA84A9400BE3031 /* Debug */ = {
