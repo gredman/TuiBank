@@ -26,7 +26,7 @@ extension AccountsViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "account", for: indexPath)
         let account = repository.accounts[indexPath.row]
         cell.textLabel?.text = account.name
-        cell.detailTextLabel?.text = numberFormatter.string(from: NSNumber(value: account.balance))
+        cell.detailTextLabel?.text = numberFormatter.string(from: account.balance)
         return cell
     }
 }

@@ -6,7 +6,9 @@
 //  Copyright © 2016 Gareth Redman. All rights reserved.
 //
 
+import Foundation
+
 struct Account {
     let name: String
-    let balance: Double
+    let balance: NSDecimalNumber
 }

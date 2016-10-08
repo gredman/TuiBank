@@ -83,7 +83,7 @@ extension SendPaymentViewController {
     private func makePayment() {
         if let account = account, let payee = payee {
             let payment = Payment(source: account, target: payee, amount: amount)
-            PaymentsRepository.instance.payments.append(payment)
+            PaymentsRepository.instance.append(payment: payment)
             delegate?.viewController(self, didFinishWithPayment: payment)
         }
     }
