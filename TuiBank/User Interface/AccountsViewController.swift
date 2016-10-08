@@ -10,13 +10,7 @@ import UIKit
 
 class AccountsViewController: UITableViewController {
     let repository = AccountsRepository.instance
-    let numberFormatter: NumberFormatter
-
-    required init?(coder aDecoder: NSCoder) {
-        numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
-        super.init(coder: aDecoder)
-    }
+    let numberFormatter = NumberFormatter.currencyFormatter()
 }
 
 extension AccountsViewController {

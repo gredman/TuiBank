@@ -7,7 +7,7 @@
 //
 
 class PaymentsRepository {
-    let payments = [
+    var payments = [
         Payment(source: AccountsRepository.instance.accounts.last!, target: PayeesRepository.instance.payees.last!, amount: 2.50)
     ]
 

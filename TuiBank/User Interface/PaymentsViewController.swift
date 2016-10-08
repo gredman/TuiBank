@@ -10,12 +10,14 @@ import UIKit
 
 class PaymentsViewController: UITableViewController {
     let repository = PaymentsRepository.instance
-    let numberFormatter: NumberFormatter
+    let numberFormatter = NumberFormatter.currencyFormatter()
 
-    required init?(coder aDecoder: NSCoder) {
-        numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .currency
-        super.init(coder: aDecoder)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController,
+            let viewController = navigationController.topViewController as? SendPaymentViewController {
+            
+            viewController.delegate = self
+        }
     }
 }
 
@@ -34,5 +36,13 @@ extension PaymentsViewController {
         cell.textLabel?.text = payment.target.name
         cell.detailTextLabel?.text = numberFormatter.string(for: payment.amount)
         return cell
+    }
+}
+
+extension PaymentsViewController: SendPaymentViewControllerDelegate {
+    func viewController(_ viewController: SendPaymentViewController, didFinishWithPayment: Payment?) {
+        viewController.dismiss(animated: true) { 
+            self.tableView.reloadData()
+        }
     }
 }
