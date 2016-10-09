@@ -15,5 +15,9 @@ class PayeesRepository {
         Payee(name: "Stephen")
     ]
 
+    func payee(withName name: String) -> Payee? {
+        return payees.first { $0.name == name }
+    }
+
     static let instance = PayeesRepository()
 }

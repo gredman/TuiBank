@@ -6,6 +6,7 @@
 //  Copyright © 2016 Gareth Redman. All rights reserved.
 //
 
+import Intents
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let vocabularyStrings = NSOrderedSet(array: PayeesRepository.instance.payees.map { $0.name })
+        INVocabulary.shared().setVocabularyStrings(vocabularyStrings, of: INVocabularyStringType.contactName)
+
         return true
     }
 
@@ -35,12 +40,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let result: Bool
 
+        if let tabBarController = window?.rootViewController as? UITabBarController,
+            let navigationController = tabBarController.viewControllers?[2] as? UINavigationController,
+            let paymentsViewController = navigationController.topViewController as? PaymentsViewController {
+
+            paymentsViewController.showPayment(for: userActivity)
+            result = true
+        } else {
+            result = false
+        }
+        return result
+    }
 }
 

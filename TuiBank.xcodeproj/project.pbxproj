@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		361043BC1DA898F80021DC33 /* SendPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043BB1DA898F80021DC33 /* SendPaymentViewController.swift */; };
-		361043C01DA899BD0021DC33 /* SelectEntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043BF1DA899BD0021DC33 /* SelectEntityViewController.swift */; };
-		361043C21DA89B4B0021DC33 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043C11DA89B4B0021DC33 /* Entity.swift */; };
-		361043C51DA89FFA0021DC33 /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043C41DA89FFA0021DC33 /* NumberFormatterExtension.swift */; };
+		361043C81DA9B9D30021DC33 /* SendPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043C61DA9B9D30021DC33 /* SendPaymentViewController.swift */; };
+		361043C91DA9B9D30021DC33 /* SelectEntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043C71DA9B9D30021DC33 /* SelectEntityViewController.swift */; };
+		361043CB1DA9B9F90021DC33 /* NumberFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043CA1DA9B9F90021DC33 /* NumberFormatterExtension.swift */; };
+		361043CD1DA9BA0B0021DC33 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361043CC1DA9BA0B0021DC33 /* Entity.swift */; };
+		3647911F1DA86007003E4725 /* SendPaymentIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3647911E1DA86007003E4725 /* SendPaymentIntentHandler.swift */; };
+		364791201DA861B0003E4725 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9701DA84F0C00BE3031 /* Account.swift */; };
+		364791211DA861B0003E4725 /* AccountsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9711DA84F0C00BE3031 /* AccountsRepository.swift */; };
+		364791221DA861B0003E4725 /* Payee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9721DA84F0C00BE3031 /* Payee.swift */; };
+		364791231DA861B0003E4725 /* PayeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9731DA84F0C00BE3031 /* PayeesRepository.swift */; };
+		364791241DA861B0003E4725 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9741DA84F0C00BE3031 /* Payment.swift */; };
+		364791251DA861B0003E4725 /* PaymentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9751DA84F0C00BE3031 /* PaymentsRepository.swift */; };
 		36F7F94E1DA84A9400BE3031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */; };
 		36F7F9571DA84A9400BE3031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9561DA84A9400BE3031 /* Assets.xcassets */; };
 		36F7F9761DA84F0C00BE3031 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9701DA84F0C00BE3031 /* Account.swift */; };
@@ -24,13 +31,53 @@
 		36F7F9861DA8512600BE3031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F9811DA8512600BE3031 /* Main.storyboard */; };
 		36F7F9871DA8512600BE3031 /* PayeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9821DA8512600BE3031 /* PayeesViewController.swift */; };
 		36F7F9881DA8512600BE3031 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */; };
+		36F7F9991DA8598400BE3031 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F7F9981DA8598400BE3031 /* IntentsUI.framework */; };
+		36F7F99C1DA8598400BE3031 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7F99B1DA8598400BE3031 /* IntentViewController.swift */; };
+		36F7F99F1DA8598400BE3031 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7F99D1DA8598400BE3031 /* MainInterface.storyboard */; };
+		36F7F9A31DA8598400BE3031 /* TuiBankIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36F7F9961DA8598400BE3031 /* TuiBankIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36F7F9A61DA8598400BE3031 /* TuiBankIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36F7F98D1DA8598400BE3031 /* TuiBankIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36F7F9A11DA8598400BE3031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F7F9421DA84A9400BE3031 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F7F9951DA8598400BE3031;
+			remoteInfo = TuiBankIntentUI;
+		};
+		36F7F9A41DA8598400BE3031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F7F9421DA84A9400BE3031 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F7F98C1DA8598400BE3031;
+			remoteInfo = TuiBankIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36F7F9AD1DA8598400BE3031 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36F7F9A31DA8598400BE3031 /* TuiBankIntentUI.appex in Embed App Extensions */,
+				36F7F9A61DA8598400BE3031 /* TuiBankIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		361043BB1DA898F80021DC33 /* SendPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentViewController.swift; sourceTree = "<group>"; };
-		361043BF1DA899BD0021DC33 /* SelectEntityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectEntityViewController.swift; sourceTree = "<group>"; };
-		361043C11DA89B4B0021DC33 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		361043C41DA89FFA0021DC33 /* NumberFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtension.swift; sourceTree = "<group>"; };
+		361043C61DA9B9D30021DC33 /* SendPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentViewController.swift; sourceTree = "<group>"; };
+		361043C71DA9B9D30021DC33 /* SelectEntityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectEntityViewController.swift; sourceTree = "<group>"; };
+		361043CA1DA9B9F90021DC33 /* NumberFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatterExtension.swift; sourceTree = "<group>"; };
+		361043CC1DA9BA0B0021DC33 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		361043CE1DA9BAF00021DC33 /* TuiBankIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuiBankIntent.entitlements; sourceTree = "<group>"; };
+		36137F381DA8699F00EF12C1 /* TuiBank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuiBank.entitlements; sourceTree = "<group>"; };
+		3647911E1DA86007003E4725 /* SendPaymentIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentIntentHandler.swift; sourceTree = "<group>"; };
 		36F7F94A1DA84A9400BE3031 /* TuiBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuiBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36F7F9561DA84A9400BE3031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +93,13 @@
 		36F7F9811DA8512600BE3031 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		36F7F9821DA8512600BE3031 /* PayeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeesViewController.swift; sourceTree = "<group>"; };
 		36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
+		36F7F98D1DA8598400BE3031 /* TuiBankIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TuiBankIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F7F9911DA8598400BE3031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F7F9961DA8598400BE3031 /* TuiBankIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TuiBankIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F7F9981DA8598400BE3031 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		36F7F99B1DA8598400BE3031 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		36F7F99E1DA8598400BE3031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		36F7F9A01DA8598400BE3031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +110,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36F7F98A1DA8598400BE3031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F7F9931DA8598400BE3031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F7F9991DA8598400BE3031 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		361043C31DA89FE70021DC33 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				361043C41DA89FFA0021DC33 /* NumberFormatterExtension.swift */,
+				361043CA1DA9B9F90021DC33 /* NumberFormatterExtension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -71,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				36F7F94C1DA84A9400BE3031 /* TuiBank */,
+				36F7F98E1DA8598400BE3031 /* TuiBankIntent */,
+				36F7F99A1DA8598400BE3031 /* TuiBankIntentUI */,
+				36F7F9971DA8598400BE3031 /* Frameworks */,
 				36F7F94B1DA84A9400BE3031 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				36F7F94A1DA84A9400BE3031 /* TuiBank.app */,
+				36F7F98D1DA8598400BE3031 /* TuiBankIntent.appex */,
+				36F7F9961DA8598400BE3031 /* TuiBankIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +160,7 @@
 		36F7F94C1DA84A9400BE3031 /* TuiBank */ = {
 			isa = PBXGroup;
 			children = (
+				36137F381DA8699F00EF12C1 /* TuiBank.entitlements */,
 				36F7F94D1DA84A9400BE3031 /* AppDelegate.swift */,
 				36F7F9561DA84A9400BE3031 /* Assets.xcassets */,
 				36F7F96F1DA84F0C00BE3031 /* Data */,
@@ -99,9 +174,9 @@
 		36F7F96F1DA84F0C00BE3031 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				361043CC1DA9BA0B0021DC33 /* Entity.swift */,
 				36F7F9701DA84F0C00BE3031 /* Account.swift */,
 				36F7F9711DA84F0C00BE3031 /* AccountsRepository.swift */,
-				361043C11DA89B4B0021DC33 /* Entity.swift */,
 				36F7F9721DA84F0C00BE3031 /* Payee.swift */,
 				36F7F9731DA84F0C00BE3031 /* PayeesRepository.swift */,
 				36F7F9741DA84F0C00BE3031 /* Payment.swift */,
@@ -113,15 +188,43 @@
 		36F7F97E1DA8512600BE3031 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				361043C61DA9B9D30021DC33 /* SendPaymentViewController.swift */,
+				361043C71DA9B9D30021DC33 /* SelectEntityViewController.swift */,
 				36F7F97F1DA8512600BE3031 /* AccountsViewController.swift */,
 				36F7F9801DA8512600BE3031 /* LaunchScreen.storyboard */,
 				36F7F9811DA8512600BE3031 /* Main.storyboard */,
 				36F7F9821DA8512600BE3031 /* PayeesViewController.swift */,
 				36F7F9831DA8512600BE3031 /* PaymentsViewController.swift */,
-				361043BF1DA899BD0021DC33 /* SelectEntityViewController.swift */,
-				361043BB1DA898F80021DC33 /* SendPaymentViewController.swift */,
 			);
 			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		36F7F98E1DA8598400BE3031 /* TuiBankIntent */ = {
+			isa = PBXGroup;
+			children = (
+				361043CE1DA9BAF00021DC33 /* TuiBankIntent.entitlements */,
+				36F7F9911DA8598400BE3031 /* Info.plist */,
+				3647911E1DA86007003E4725 /* SendPaymentIntentHandler.swift */,
+			);
+			path = TuiBankIntent;
+			sourceTree = "<group>";
+		};
+		36F7F9971DA8598400BE3031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36F7F9981DA8598400BE3031 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36F7F99A1DA8598400BE3031 /* TuiBankIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				36F7F99B1DA8598400BE3031 /* IntentViewController.swift */,
+				36F7F99D1DA8598400BE3031 /* MainInterface.storyboard */,
+				36F7F9A01DA8598400BE3031 /* Info.plist */,
+			);
+			path = TuiBankIntentUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,15 +237,52 @@
 				36F7F9461DA84A9400BE3031 /* Sources */,
 				36F7F9471DA84A9400BE3031 /* Frameworks */,
 				36F7F9481DA84A9400BE3031 /* Resources */,
+				36F7F9AD1DA8598400BE3031 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				36F7F9A21DA8598400BE3031 /* PBXTargetDependency */,
+				36F7F9A51DA8598400BE3031 /* PBXTargetDependency */,
 			);
 			name = TuiBank;
 			productName = TuiBank;
 			productReference = 36F7F94A1DA84A9400BE3031 /* TuiBank.app */;
 			productType = "com.apple.product-type.application";
+		};
+		36F7F98C1DA8598400BE3031 /* TuiBankIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F7F9AA1DA8598400BE3031 /* Build configuration list for PBXNativeTarget "TuiBankIntent" */;
+			buildPhases = (
+				36F7F9891DA8598400BE3031 /* Sources */,
+				36F7F98A1DA8598400BE3031 /* Frameworks */,
+				36F7F98B1DA8598400BE3031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuiBankIntent;
+			productName = TuiBankIntent;
+			productReference = 36F7F98D1DA8598400BE3031 /* TuiBankIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		36F7F9951DA8598400BE3031 /* TuiBankIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F7F9A71DA8598400BE3031 /* Build configuration list for PBXNativeTarget "TuiBankIntentUI" */;
+			buildPhases = (
+				36F7F9921DA8598400BE3031 /* Sources */,
+				36F7F9931DA8598400BE3031 /* Frameworks */,
+				36F7F9941DA8598400BE3031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuiBankIntentUI;
+			productName = TuiBankIntentUI;
+			productReference = 36F7F9961DA8598400BE3031 /* TuiBankIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -155,6 +295,30 @@
 				ORGANIZATIONNAME = "Gareth Redman";
 				TargetAttributes = {
 					36F7F9491DA84A9400BE3031 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UB3GT59Z2L;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					36F7F98C1DA8598400BE3031 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UB3GT59Z2L;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					36F7F9951DA8598400BE3031 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UB3GT59Z2L;
 						ProvisioningStyle = Automatic;
@@ -175,6 +339,8 @@
 			projectRoot = "";
 			targets = (
 				36F7F9491DA84A9400BE3031 /* TuiBank */,
+				36F7F98C1DA8598400BE3031 /* TuiBankIntent */,
+				36F7F9951DA8598400BE3031 /* TuiBankIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +356,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36F7F98B1DA8598400BE3031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F7F9941DA8598400BE3031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F7F99F1DA8598400BE3031 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -199,22 +380,68 @@
 			files = (
 				36F7F9871DA8512600BE3031 /* PayeesViewController.swift in Sources */,
 				36F7F97B1DA84F0C00BE3031 /* PaymentsRepository.swift in Sources */,
-				361043C01DA899BD0021DC33 /* SelectEntityViewController.swift in Sources */,
+				361043CD1DA9BA0B0021DC33 /* Entity.swift in Sources */,
+				361043C91DA9B9D30021DC33 /* SelectEntityViewController.swift in Sources */,
 				36F7F9791DA84F0C00BE3031 /* PayeesRepository.swift in Sources */,
 				36F7F9771DA84F0C00BE3031 /* AccountsRepository.swift in Sources */,
 				36F7F9781DA84F0C00BE3031 /* Payee.swift in Sources */,
+				361043CB1DA9B9F90021DC33 /* NumberFormatterExtension.swift in Sources */,
 				36F7F9881DA8512600BE3031 /* PaymentsViewController.swift in Sources */,
-				361043C51DA89FFA0021DC33 /* NumberFormatterExtension.swift in Sources */,
 				36F7F9761DA84F0C00BE3031 /* Account.swift in Sources */,
 				36F7F94E1DA84A9400BE3031 /* AppDelegate.swift in Sources */,
 				36F7F9841DA8512600BE3031 /* AccountsViewController.swift in Sources */,
-				361043C21DA89B4B0021DC33 /* Entity.swift in Sources */,
-				361043BC1DA898F80021DC33 /* SendPaymentViewController.swift in Sources */,
+				361043C81DA9B9D30021DC33 /* SendPaymentViewController.swift in Sources */,
 				36F7F97A1DA84F0C00BE3031 /* Payment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36F7F9891DA8598400BE3031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364791211DA861B0003E4725 /* AccountsRepository.swift in Sources */,
+				364791231DA861B0003E4725 /* PayeesRepository.swift in Sources */,
+				3647911F1DA86007003E4725 /* SendPaymentIntentHandler.swift in Sources */,
+				364791221DA861B0003E4725 /* Payee.swift in Sources */,
+				364791241DA861B0003E4725 /* Payment.swift in Sources */,
+				364791251DA861B0003E4725 /* PaymentsRepository.swift in Sources */,
+				364791201DA861B0003E4725 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F7F9921DA8598400BE3031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F7F99C1DA8598400BE3031 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36F7F9A21DA8598400BE3031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F7F9951DA8598400BE3031 /* TuiBankIntentUI */;
+			targetProxy = 36F7F9A11DA8598400BE3031 /* PBXContainerItemProxy */;
+		};
+		36F7F9A51DA8598400BE3031 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F7F98C1DA8598400BE3031 /* TuiBankIntent */;
+			targetProxy = 36F7F9A41DA8598400BE3031 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36F7F99D1DA8598400BE3031 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36F7F99E1DA8598400BE3031 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		36F7F95C1DA84A9400BE3031 /* Debug */ = {
@@ -311,7 +538,10 @@
 		36F7F95F1DA84A9400BE3031 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TuiBank/TuiBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UB3GT59Z2L;
 				INFOPLIST_FILE = TuiBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -324,12 +554,72 @@
 		36F7F9601DA84A9400BE3031 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TuiBank/TuiBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UB3GT59Z2L;
 				INFOPLIST_FILE = TuiBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nz.gen.nil.TuiBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36F7F9A81DA8598400BE3031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UB3GT59Z2L;
+				INFOPLIST_FILE = TuiBankIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.gen.nil.TuiBank.TuiBankIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36F7F9A91DA8598400BE3031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UB3GT59Z2L;
+				INFOPLIST_FILE = TuiBankIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.gen.nil.TuiBank.TuiBankIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36F7F9AB1DA8598400BE3031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TuiBankIntent/TuiBankIntent.entitlements;
+				DEVELOPMENT_TEAM = UB3GT59Z2L;
+				INFOPLIST_FILE = TuiBankIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.gen.nil.TuiBank.TuiBankIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36F7F9AC1DA8598400BE3031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TuiBankIntent/TuiBankIntent.entitlements;
+				DEVELOPMENT_TEAM = UB3GT59Z2L;
+				INFOPLIST_FILE = TuiBankIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nz.gen.nil.TuiBank.TuiBankIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -351,6 +641,24 @@
 			buildConfigurations = (
 				36F7F95F1DA84A9400BE3031 /* Debug */,
 				36F7F9601DA84A9400BE3031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F7F9A71DA8598400BE3031 /* Build configuration list for PBXNativeTarget "TuiBankIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F7F9A81DA8598400BE3031 /* Debug */,
+				36F7F9A91DA8598400BE3031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F7F9AA1DA8598400BE3031 /* Build configuration list for PBXNativeTarget "TuiBankIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F7F9AB1DA8598400BE3031 /* Debug */,
+				36F7F9AC1DA8598400BE3031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

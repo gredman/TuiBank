@@ -31,12 +31,16 @@ private extension Payment {
 }
 
 class PaymentsRepository {
-    private let userDefaults = UserDefaults.standard
+    private let userDefaults = UserDefaults(suiteName: "group.payments")!
     private let key = "payments"
 
-    private(set) var payments: [Payment]
+    private(set) var payments = [Payment]()
 
     init() {
+        reloadData()
+    }
+
+    func reloadData() {
         if let array = userDefaults.array(forKey: key) {
             self.payments = array.map({ Payment(dictionary: $0 as! Dictionary<String, AnyObject>) })
         } else {

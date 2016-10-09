@@ -189,7 +189,7 @@
                     <navigationItem key="navigationItem" title="Payments" id="ufL-XI-wxj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gw3-yE-bft">
                             <connections>
-                                <segue destination="mz1-Bc-ZRU" kind="presentation" id="O2b-6b-oGS"/>
+                                <segue destination="mz1-Bc-ZRU" kind="presentation" identifier="payment" id="O2b-6b-oGS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
