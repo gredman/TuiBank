@@ -39,7 +39,7 @@ class SendPaymentViewController: UITableViewController {
         }
     }
 
-    func onCancel(_ sender: AnyObject?) {
+    @objc func onCancel(_ sender: AnyObject?) {
         delegate?.viewController(self, didFinishWithPayment: nil)
     }
 }
